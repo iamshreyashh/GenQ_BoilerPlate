@@ -1,0 +1,150 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    transform: none;
+}
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+/* Left section with Help, Contact Us, Company */
+.navbar-left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-item>a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s ease;
+}
+
+.navbar-item>a:hover {
+    color: #ffffff;
+}
+
+/* Center logo */
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-logo .logo-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-logo .logo-text:hover {
+    opacity: 0.8;
+}
+
+/* Right section with login button */
+.navbar-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    z-index: 100;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    background: rgba(19, 10, 31, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    animation: dropdownFadeIn 0.15s ease-out;
+    z-index: 101;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.15s ease;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Minimalist Login Button - Matching Navbar Style */
+.navbar-actions .btn {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: none;
+    transition: color 0.2s ease;
+}
+
+.navbar-actions .btn:hover {
+    background: transparent;
+    border: none;
+    transform: none;
+    box-shadow: none;
+    filter: none;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .navbar-left {
+        display: none;
+    }
+
+    .navbar-container {
+        grid-template-columns: auto 1fr;
+    }
+}
