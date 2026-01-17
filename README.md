@@ -82,5 +82,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 <p align="center">
-  Built with ❤️ by Shreyash
+  Built with ❤️ by Shreyash Tripathi
 </p>
