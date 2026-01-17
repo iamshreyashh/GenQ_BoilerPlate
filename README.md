@@ -1,16 +1,86 @@
-# React + Vite
+# 🌟 Amber Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **A Next-Generation Customer Service Interface built with React 19 & Vite.**
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## React Compiler
+Amber Platform is a modern, high-performance landing page designed for a customer service SaaS. It features a sleek, dark-themed UI with glassmorphism effects, interactive elements, and a smooth user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **🎨 Modern Aesthetics**: Premium dark mode design with vibrant gradients and subtle animations.
+- **🤖 Smart Chatbot**: Floating, interactive chatbot capable of expanding and collapsing with smooth transitions.
+- **🔐 Secure Login**: Modal-based authentication flow with executive and admin role support.
+- **📱 Fully Responsive**: Optimized for all devices, from desktop to mobile.
+- **⚡ Blazing Fast**: Powered by Vite for instant HMR and optimized production builds.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Modern CSS3 (Variables, Flexbox, Grid, Glassmorphism)
+- **Linting**: ESLint + React Hooks
+
+## 💻 Getting Started
+
+Follow these steps to get the project up and running locally.
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/iamshreyashh/GenQ_BoilerPlate.git
+   cd GenQ_BoilerPlate
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4.  Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/          # Static assets (images, icons)
+├── components/      # Reusable UI components
+│   ├── Chatbot.jsx      # Floating chat interface
+│   ├── Hero.jsx         # Main landing section
+│   ├── LoginModal.jsx   # Authentication modal
+│   └── Navbar.jsx       # Top navigation bar
+├── App.jsx          # Main application layout
+├── index.css        # Global styles and variables
+└── main.jsx         # Application entry point
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+<p align="center">
+  Built with ❤️ by Shreyash
+</p>
