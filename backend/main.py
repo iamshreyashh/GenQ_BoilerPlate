@@ -107,11 +107,11 @@ async def query_rag(request: QueryRequest):
         # 3. Create Chain
         system_prompt = (
             # "you only will be answering questions based on the medical queries"
-            "You are an assistant for question-answering tasks. "
-            "Use ONLY the following pieces of retrieved context to answer "
-            "the question. If the answer is not in the context, say that you "
-            "don't know. Do not use your internal knowledge. Use three "
-            "sentences maximum and keep the answer concise."
+            # "You are an assistant for question-answering tasks. "
+            # "Use the following pieces of retrieved context to answer "
+            # "the question. If the answer is not in the context, say that you "
+            # "don't know. Do not use your internal knowledge. "
+            # "Keep the answer concise."
             "\n\n"
             "{context}"
         )
